@@ -57,13 +57,6 @@ export default function Home() {
                         onClick={toggleColorScheme}
                      />
                   </Box>
-                  <Box>
-                     <Link href={'https://github.com/sssuneeth/Next-mantine-pricing-component'} target="_blank">
-                        <ActionIcon variant="default" radius={'md'} size={'lg'}>
-                           <AiFillGithub size={20} />
-                        </ActionIcon>
-                     </Link>
-                  </Box>
                </Flex>
             </Group>
 
