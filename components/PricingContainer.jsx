@@ -1,6 +1,8 @@
 import { Box, Button, Divider, Flex, Group, Stack, Text, Title, useMantineTheme } from '@mantine/core'
 import { useState } from 'react'
 import Switch from "react-switch"
+import Link from "next/link";
+
 
 
 export const PricingContainer = () => {
@@ -24,10 +26,12 @@ export const PricingContainer = () => {
                   align='center'
                   justify='start'
                >
+                  <img src="./seguidores-peru.svg" alt="Seguidores Perú" width="300" height="118" />
+
                   <Title
                      order={2}
                      color= {theme.colorScheme === 'dark' ? 'white' : 'hsl(233, 13%, 49%)'}
-                  >Our Pricing</Title>
+                  >Nuestros Precios</Title>
                   <Box
                      sx={{
                         fontWeight: 700,
@@ -37,7 +41,7 @@ export const PricingContainer = () => {
                         gap: 19
                      }}
                   >
-                     <Text fz={'sm'}>Annually</Text>
+                     <Text fz={'sm'}>Pago Único</Text>
                      <Switch
                         checked={monthly}
                         onChange={handleChange}
@@ -51,7 +55,7 @@ export const PricingContainer = () => {
                         offColor={'#7F85E4'}
                         handleDiameter={18}
                      />
-                     <Text fz={'sm'}>Monthly</Text>
+                     <Text fz={'sm'}>Mensual</Text>
                   </Box>
                </Flex>
                {/** cards section */}
@@ -88,7 +92,7 @@ export const PricingContainer = () => {
                            <Text sx={{
                               fontWeight: 700,
                               color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : 'hsl(233, 13%, 49%)',
-                           }} fz={'md'}>Basic</Text>
+                           }} fz={'sm'}>1,000 Seguidores Instagram</Text>
                            <Title
                               order={2}
                               sx={{
@@ -99,25 +103,27 @@ export const PricingContainer = () => {
                                  gap: 5
                               }}
                            >
-                              <Text fz={'2rem'}>$</Text>
-                              {monthly ? '19.99' : '199.99'}
+                              {monthly ? '19.90' : '24.90'}
+                              <Text fz={'2rem'}>Soles</Text>
                            </Title>
                            <Stack w={'100%'} align='center' spacing={10} sx={{color: theme.colorScheme === 'light' && 'hsl(233, 13%, 49%)'}}>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
-                              <Text fz={'sm'} fw={600} >500 GB Storage</Text>
+                              <Text fz={'sm'} fw={600} >Seguidores Premium</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
-                              <Text fz={'sm'} fw={600} >2 Users Allowed</Text>
+                              <Text fz={'sm'} fw={600} >No se requiere contraseña</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
-                              <Text fz={'sm'} fw={600} >Send up to 3 GB</Text>
+                              <Text fz={'sm'} fw={600} >Entrega Rápida Garantizada</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
                            </Stack>
-                           <Button
-                              variant='gradient'
-                              gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
-                              w='100%'
-                           >
-                              LEARN MORE
-                           </Button>
+                           <Link href={'https://wa.link/tjruyo'}>
+                              <Button
+                                 variant='gradient'
+                                 gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
+                                 w='100%'
+                              >
+                                 COMPRAR AHORA
+                              </Button>
+                           </Link>
                         </Stack>
                      </Box>
                      <Box
@@ -142,7 +148,7 @@ export const PricingContainer = () => {
                         <Stack w={'100%'} align={'center'} spacing={20}>
                            <Text sx={{
                               fontWeight: 700,
-                           }} fz={'md'}>Professional</Text>
+                           }} fz={'sm'}>5,000 Seguidores Instagram</Text>
                            <Title
                               order={2}
                               sx={{
@@ -152,18 +158,20 @@ export const PricingContainer = () => {
                                  gap: 5
                               }}
                            >
-                              <Text fz={'2rem'}>$</Text>
-                              {monthly ? '24.99' : '249.99'}
+                              
+                              {monthly ? '79.90' : '99.90'}
+                              <Text fz={'2rem'}>Soles</Text>
                            </Title>
                            <Stack w={'100%'} align='center' spacing={10}>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' && 'white', opacity: theme.colorScheme === 'dark' && 0.6 }} />
-                              <Text fz={'sm'} fw={600}>1 TB Storage</Text>
+                              <Text fz={'sm'} fw={600}>Seguidores Premium</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' && 'white', opacity: theme.colorScheme === 'dark' && 0.6 }} />
-                              <Text fz={'sm'} fw={600}>5 Users Allowed</Text>
+                              <Text fz={'sm'} fw={600}>No se requiere contraseña</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' && 'white', opacity: theme.colorScheme === 'dark' && 0.6 }} />
-                              <Text fz={'sm'} fw={600}>Send up to 10 GB</Text>
+                              <Text fz={'sm'} fw={600}>Entrega Rápida Garantizada</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' && 'white', opacity: theme.colorScheme === 'dark' && 0.6 }} />
                            </Stack>
+                           <Link href={'https://wa.link/cz0m6o'}>
                            <Button
                               sx={{
                                  backgroundColor: 'white',
@@ -176,8 +184,9 @@ export const PricingContainer = () => {
                               }}
                               w='100%'
                            >
-                              LEARN MORE
+                              COMPRAR AHORA
                            </Button>
+                           </Link>
                         </Stack>
                      </Box><Box
                         sx={{
@@ -205,7 +214,7 @@ export const PricingContainer = () => {
                            <Text sx={{
                               fontWeight: 700,
                               color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : 'hsl(233, 13%, 49%)',
-                           }} fz={'md'}>Master</Text>
+                           }} fz={'sm'}>10,000 Seguidores Instagram</Text>
                            <Title
                               order={2}
                               sx={{
@@ -216,25 +225,27 @@ export const PricingContainer = () => {
                                  gap: 5
                               }}
                            >
-                              <Text fz={'2rem'}>$</Text>
-                              {monthly ? '39.99' : '399.99'}
+                              {monthly ? '169.90' : '189.90'}
+                              <Text fz={'2rem'}>Soles</Text>
                            </Title>
                            <Stack w={'100%'} align='center' spacing={10} sx={{color: theme.colorScheme === 'light' && 'hsl(233, 13%, 49%)'}}>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
-                              <Text fz={'sm'} fw={600} >2 TB Storage</Text>
+                              <Text fz={'sm'} fw={600} >Seguidores Premium</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
-                              <Text fz={'sm'} fw={600} >10 Users Allowed</Text>
+                              <Text fz={'sm'} fw={600} >No se requiere contraseña</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
-                              <Text fz={'sm'} fw={600} >Send up to 20 GB</Text>
+                              <Text fz={'sm'} fw={600} >Entrega Rápida Garantizada</Text>
                               <Divider sx={{ width: '100%', borderColor: theme.colorScheme === 'dark' &&'gray', opacity: theme.colorScheme === 'dark' && 0.7 }} />
                            </Stack>
-                           <Button
-                              variant='gradient'
-                              gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
-                              w='100%'
-                           >
-                              LEARN MORE
-                           </Button>
+                           <Link href={'https://wa.link/qpdd19'}>
+                              <Button
+                                 variant='gradient'
+                                 gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
+                                 w='100%'
+                              >
+                                 COMPRAR AHORA
+                              </Button>
+                           </Link>
                         </Stack>
 
                      </Box>

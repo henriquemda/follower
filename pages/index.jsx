@@ -14,7 +14,7 @@ export default function Home() {
    return (
       <>
          <Head>
-            <title>Nextjs Mantine pricing component</title>
+            <title>Seguidores Reales y Orgánicos en las Redes Sociales - Perú</title>
             <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
          </Head>
          <Box
@@ -48,7 +48,7 @@ export default function Home() {
             >
                <Flex justify={'space-between'} w={'100%'}>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                     <Text fz='sm' fw={600} sx={{ color: dark ? 'gray' : 'gray' }}>Toggle Mode:</Text>
+                     <Text fz='sm' fw={600} sx={{ color: dark ? 'gray' : 'gray' }}></Text>
                      <Switch
                         size="md"
                         color={dark ? 'gray' : 'dark'}
