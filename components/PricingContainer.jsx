@@ -63,7 +63,7 @@ export const PricingContainer = () => {
                                  gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
                                  w='100%'
                               >
-                                 COMPRAR AHORA
+                                 COMPRAR POR WHATSAPP
                               </Button>
                {/** cards section */}
                <Group>
