@@ -57,13 +57,14 @@ export const PricingContainer = () => {
                      />
                      <Text fz={'sm'}>Mensual</Text>
                   </Box>
-                  <Button
+               </Flex>
+               <Button
                                  variant='gradient'
                                  gradient={{ from: 'hsl(236, 72%, 79%)', to: 'hsl(237, 63%, 64%)' }}
                                  w='100%'
                               >
                                  COMPRAR AHORA
-               </Flex>
+                              </Button>
                {/** cards section */}
                <Group>
                   <Flex
